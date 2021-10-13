@@ -1,0 +1,21 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Main -->
+<section id="main">
+	<header>
+		{% if site.avatar %}
+			<span class="avatar"><img src="/assets/images/avatar/{{ site.avatar }}" alt="" /></span>
+		{% else %}
+			<span class="avatar"><img src="/assets/images/avatar_placeholder.jpeg" alt="" /></span>
+		{% endif %}
+		<h1>{{ site.contact-first_name }} {{ site.contact-last_name }}</h1>
+		
+		{% if site.contact-title %}
+			<p class="occupation">{{ site.contact-title }}</p>
+		{% endif %}
+		
+		{% if site.contact-company %}
+			<p class="company-name">{{ site.contact-company }}</p>
+		{% endif %}
+	</header>

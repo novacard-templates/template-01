@@ -1,0 +1,94 @@
+<footer>
+    <ul class="icons" id="contacts-list">
+		{% if site.contact-email %}
+			<li><a href="mailto:{{ site.contact-email }}" class="far fa-envelope" target="_blank">Email</a></li>
+		{% endif %}
+		
+		{% if site.contact-phone %}
+			<li><a href="tel:{{ site.contact-phone }}" class="fas fa-phone" target="_blank">Phone</a></li>
+		{% endif %}
+
+		{% if site.contact-website %} 
+			<li><a href="{{ site.contact-website }}" class="fab fa-chrome" target="_blank">Website</a></li>
+		{% endif %}
+		
+		{% if site.contact-facebook_url %}
+			<li><a href="{{ site.contact-facebook_url }}" class="fa-facebook" target="_blank">Facebook</a></li>
+		{% endif %}
+		
+		{% if site.contact-linkedin_url %}
+			<li><a href="{{ site.contact-linkedin_url }}" class="fa-linkedin" target="_blank">LinkedIn</a></li>
+		{% endif %}
+
+		{% if site.contact-instagram_url %}
+			<li><a href="{{ site.contact-instagram_url }}" class="fab fa-instagram" target="_blank">Instagram</a></li>
+		{% endif %}
+
+		{% if site.contact-pinterest_url %}
+			<li><a href="{{ site.contact-pinterest_url }}" class="fab fa-pinterest" target="_blank">Pinterest</a></li>
+		{% endif %}
+
+		{% if site.contact-twitter_url %}
+			<li><a href="{{ site.contact-twitter_url }}" class="fab fa-twitter" target="_blank">Twitter</a></li>
+		{% endif %}
+
+		{% if site.contact-youtube_url %}
+			<li><a href="{{ site.contact-youtube_url }}" class="fab fa-youtube" target="_blank">Youtube</a></li>
+		{% endif %}
+
+		{% if site.contact-snapchat_url %}
+			<li><a href="{{ site.contact-snapchat_url }}" class="fab fa-snapchat" target="_blank">Snapchat</a></li>
+		{% endif %}
+
+		{% if site.contact-whatsapp_url %}
+			<li><a href="{{ site.contact-whatsapp_url }}" class="fab fa-whatsapp" target="_blank">Whatsapp</a></li>
+		{% endif %}
+
+		{% if site.contact-tiktok_url %}
+			<li><a href="{{ site.contact-tiktok_url }}" class="fab fa-tiktok" target="_blank">Tiktok</a></li>
+		{% endif %}
+
+		{% if site.contact-telegram_url %}
+			<li><a href="{{ site.contact-telegram_url }}" class="fab fa-telegram-plane" target="_blank">Telegram</a></li>
+		{% endif %}
+
+		{% if site.contact-skype_url %}
+			<li><a href="{{ site.contact-skype_url }}" class="fab fa-skype" target="_blank">Skype</a></li>
+		{% endif %}
+
+		{% if site.contact-github_url %}
+			<li><a href="{{ site.contact-github_url }}" class="fab fa-github" target="_blank">Github</a></li>
+		{% endif %}
+
+		{% if site.contact-gitlab_url %}
+			<li><a href="{{ site.contact-gitlab_url }}" class="fab fa-gitlab" target="_blank">Gitlab</a></li>
+		{% endif %}
+
+	</ul>
+
+	<p>
+		<a id="download-vcf" href="{{ "/assets/vcard/vcard.vcf" | absolute_url }}" target="_blank" download>
+			Salveaza Contact
+		</a>
+	</p>
+</footer>
+
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+	<ul class="copyright">
+    	<li>Powered by: <a href="http://novacard.ro" target="_blank">Novacard.ro</a></li>   
+	</ul>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<!--[if lte IE 8]><script src="{{ site.url }}{{ site.baseurl }}/assets/js/respond.min.js"></script><![endif]-->
+<script>
+	if ('addEventListener' in window) {
+		window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+		document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+	}
+</script>
